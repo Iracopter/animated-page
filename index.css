@@ -1,0 +1,226 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+h5{
+    font-family: Filicudi;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(202, 158, 103, 1);
+
+}
+
+.first-block{
+    background-color: black;
+    align-items: center;
+    text-align: center;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    /*padding-top: 100px;*/
+}
+
+.head > * {
+    margin: 100px; /* Додати відступ 10px між усіма дочірніми елементами */
+}
+
+.logo{
+    width: 172px;
+    height: 186px;
+    top: 116px;
+    left: 778px;
+    padding: 0px 0.03643798828125px 0px 0px;
+}
+
+.primary-button{
+    border: 2px solid rgba(202, 158, 103, 1);
+    background-color: black;
+    color: rgba(202, 158, 103, 1);
+    width: 162px;
+    height: 64px;
+    border-radius: 8px;
+    right: 0%;
+}
+
+.middle{
+    /*padding-top: 133px;*/
+    display: flex;
+    left: 15%;
+    position: relative; /* Встановлюємо позицію relative для контейнера, щоб зробити absolute позицію дочірньої картинки відносно нього */
+    width: auto; /* Задаємо ширину контейнера (змініть на потрібне значення) */
+    height: 850px; /* Задаємо висоту контейнера (змініть на потрібне значення) */
+    background-image: url("GEOFF_FRONT_COVER_V1\ 1.png"); /* Задаємо шлях до основної картинки */
+    background-repeat: no-repeat; /* Запобігаємо повторенню основної картинки */
+    /*background-size: cover;*/
+}
+
+.amelie{
+    position: absolute; /* Встановлюємо позицію absolute для дочірньої картинки */
+    top: 518px; /* Відступ від верхнього краю контейнера (змініть на потрібне значення) */
+    left: -49px; /* Відступ від лівого краю контейнера (змініть на потрібне значення) */
+    width: 100%; /* Задаємо ширину дочірньої картинки відповідну ширині контейнера */
+    height: 100%; /* Задаємо висоту дочірньої картинки відповідну висоті контейнера */
+    background-image: url("amelie\ 1.png"); /* Задаємо шлях до дочірньої картинки */
+    background-repeat: no-repeat;
+}
+
+.jonah{
+    position: absolute; /* Встановлюємо позицію absolute для дочірньої картинки */
+    top: 606px; /* Відступ від верхнього краю контейнера (змініть на потрібне значення) */
+    left: 348px; /* Відступ від лівого краю контейнера (змініть на потрібне значення) */
+    width: 100%; /* Задаємо ширину дочірньої картинки відповідну ширині контейнера */
+    height: 100%; /* Задаємо висоту дочірньої картинки відповідну висоті контейнера */
+    background-image: url("johan\ 1.png"); /* Задаємо шлях до дочірньої картинки */
+    background-repeat: no-repeat;
+}
+
+.clemence{
+    position: absolute; /* Встановлюємо позицію absolute для дочірньої картинки */
+    top: 540px; /* Відступ від верхнього краю контейнера (змініть на потрібне значення) */
+    left: 737px; /* Відступ від лівого краю контейнера (змініть на потрібне значення) */
+    width: 100%; /* Задаємо ширину дочірньої картинки відповідну ширині контейнера */
+    height: 100%; /* Задаємо висоту дочірньої картинки відповідну висоті контейнера */
+    background-image: url("clemence\ 2.png"); /* Задаємо шлях до дочірньої картинки */
+    background-repeat: no-repeat;
+}
+
+
+.sub-image {
+    position: absolute; /* Встановлюємо позицію absolute для дочірньої картинки */
+    top: 706px; /* Відступ від верхнього краю контейнера (змініть на потрібне значення) */
+    left: -17px; /* Відступ від лівого краю контейнера (змініть на потрібне значення) */
+    width: 100%; /* Задаємо ширину дочірньої картинки відповідну ширині контейнера */
+    height: 100%; /* Задаємо висоту дочірньої картинки відповідну висоті контейнера */
+    background-image: url("Frame\ 1.png"); /* Задаємо шлях до дочірньої картинки */
+    background-repeat: no-repeat;
+    /*background-size: cover; /* Масштабуємо дочірню картинку, щоб вона відповідала розмірам контейнера */
+  }
+
+
+.info-block{
+    display: flex;
+    border: 2px solid rgba(202, 158, 103, 1);
+    height: 205px;
+    border-radius: 24px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 190px;
+    margin-right: 190px;
+    margin-top: 184px;
+    color: rgba(202, 158, 103, 1);
+}
+
+.info-block > *{
+    border: 2px solid rgba(202, 158, 103, 1) ;
+}
+
+.globe-photo{
+    width: 112px;
+    height: 112px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.white-text{
+    color: white;
+}
+
+table.rounded-table {
+    border-collapse:initial; /* Встановлюємо відмінні границі між ячейками */
+    border-radius: 10px; /* Заокруглені кути для таблиці */
+    border: 2px solid rgba(202, 158, 103, 1);
+  }
+  
+  td {
+    padding: 10px;
+    border-right: 1px solid #ccc; /* Прямі границі для кожної ячейки */
+    border-radius: 0; /* Зберігаємо прямі кути для ячейок */
+  }
+  
+
+.second-block{
+    background: url("Laag 1.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(202, 158, 103, 1);
+    background-size: cover;
+}  
+
+.disk-photo{
+    width: 606px;
+    margin-top: 480px;
+    margin-bottom: 440px;
+}
+
+.third-block{
+    background-color: rgba(202, 158, 103, 1);
+    text-align: center;
+}
+
+h1{
+    font-family: Filicudi;
+    font-size: 128px;
+    font-weight: 700;
+    line-height: 154px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+    text-align: center;
+    margin-top: -300px;
+}
+
+
+
+
+.email-info{
+    display: block;
+    background-color: white;
+    border-radius: 20px;
+    padding: 48px;
+    gap: 32px;
+    width: 794px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.sub-button{
+    background-color: rgba(202, 158, 103, 1);
+    color: white;
+    width: (180px);
+    height: (56px);
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+    gap: 24px;
+}
+
+.marks{
+    display: flex;
+    justify-content: center;
+}
+
+.marks > * {
+    margin: 50px; /* Додати відступ 10px між усіма дочірніми елементами */
+}
+
+.mark1{
+    width: 134px;
+}
+
+.mark2{
+    width: 143px;
+}
+
+.mark3{
+    width: 153px;
+}
