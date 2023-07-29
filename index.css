@@ -1,6 +1,25 @@
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @font-face {  /*@+f дозволяють вибрати шаблон для опису шрифтів*/
+    font-family: raleway_f;  /*вказуємо _ і якусь букву, щоб не підтягнувся якийсь системний шрифт    */
+    src: url(/raleway-regular.woff2); /**/
+    font-weight: 900;
+}
+  
+
 *{
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
+    font-family: raleway_f, sans-serif;
 }
 
 h5{
@@ -46,6 +65,12 @@ h5{
     height: 64px;
     border-radius: 8px;
     right: 0%;
+    cursor: pointer;
+}
+
+.primary-button:hover{
+    background-color: rgba(202, 158, 103, 1);
+    color: black;
 }
 
 .middle{
@@ -123,6 +148,7 @@ h5{
 .globe-photo{
     width: 112px;
     height: 112px;
+    margin: 10px;
 }
 
 .footer{
@@ -135,18 +161,31 @@ h5{
     color: white;
 }
 
+.table-block{
+    display: flex;
+    justify-content: center;
+}
+
 table.rounded-table {
     border-collapse:initial; /* Встановлюємо відмінні границі між ячейками */
     border-radius: 10px; /* Заокруглені кути для таблиці */
     border: 2px solid rgba(202, 158, 103, 1);
+    width: fit-content;
+    margin-top: 150px;
+    margin-bottom: 100px;
   }
   
   td {
     padding: 10px;
-    border-right: 1px solid #ccc; /* Прямі границі для кожної ячейки */
+    border-right: 2px solid rgba(202, 158, 103, 1); /* Прямі границі для кожної ячейки */
     border-radius: 0; /* Зберігаємо прямі кути для ячейок */
+    color: rgba(202, 158, 103, 1);
   }
-  
+ 
+.no-right{
+    border-right: none;
+    padding: 10px;
+}  
 
 .second-block{
     background: url("Laag 1.png");
@@ -161,11 +200,17 @@ table.rounded-table {
     width: 606px;
     margin-top: 480px;
     margin-bottom: 440px;
+    animation: 8s linear infinite rotate;
 }
 
 .third-block{
     background-color: rgba(202, 158, 103, 1);
     text-align: center;
+}
+
+.register{
+    display: flex;
+    justify-content: center;
 }
 
 h1{
@@ -180,7 +225,10 @@ h1{
     margin-top: -300px;
 }
 
-
+h6{
+    color: black;
+    margin-left: -35%;
+}
 
 
 .email-info{
@@ -193,6 +241,18 @@ h1{
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 
+input{
+        background-color: #eee;
+		color: #333;
+		border: 2px solid #ccc;
+		padding: 10px;
+}
+
+input:focus{
+    border: 2px solid #00bfff;
+	background-color: #f2f2f2;
+}
+
 .sub-button{
     background-color: rgba(202, 158, 103, 1);
     color: white;
@@ -202,6 +262,14 @@ h1{
     border-radius: 8px;
     border: none;
     gap: 24px;
+}
+
+.sub-button:hover{
+    cursor: pointer;
+    background-color: white;
+    margin: -1px;
+    border: 1px solid rgba(202, 158, 103, 1);
+    color: black;
 }
 
 .marks{
